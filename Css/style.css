@@ -1,5 +1,4 @@
 
-/* LINHAS 1–18: DEFINIÇÃO DE FONTES */
 @font-face {
     font-family: "Unbounded";
     src: url(../fonts/Unbounded-Bold.ttf)
@@ -18,13 +17,11 @@
     font-display: swap;
 }
 
-/* LINHAS 20–24: RESET */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* LINHAS 26–80: ESTILO DESKTOP */
 body {
     background-color: #0E1014;
     color: #FFFFFF;
@@ -80,7 +77,6 @@ section img {
     margin: 0 auto;
 }
 
-/* LINHAS 82–95: TABLET */
 @media (max-width: 768px) {
     header {
         margin: 0;
@@ -95,7 +91,6 @@ section img {
     }
 }
 
-/* LINHAS 97–121: CELULAR */
 @media (max-width: 375px) {
     header img {
         margin: 32px 0 0 16px;
