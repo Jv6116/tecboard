@@ -1,8 +1,6 @@
-
 @font-face {
     font-family: "Unbounded";
-    src: url(../fonts/Unbounded-Bold.ttf)
-    format("truetype");
+    src: url(../fonts/Unbounded-Bold.ttf) format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -10,8 +8,7 @@
 
 @font-face {
     font-family: "poppins";
-    src: url(../fonts/Poppins-Regular.ttf)
-    format("truetype");
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -20,6 +17,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,15 +26,26 @@ body {
 }
 
 header {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 0 16px;
+}
+
+header img {
     display: block;
-    margin: 75px 0 0 360px;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 0 16px;
 }
 
 h1 {
-    font-size: 64px;
+    font-size: clamp(36px, 9vw, 64px);
     font-family: "unbounded", sans-serif;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 h1 span {
@@ -45,19 +54,21 @@ h1 span {
 
 p {
     font-family: "poppins", sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 4.5vw, 24px);
     text-align: center;
     margin: 24px auto 0;
-    width: 792px;
+    width: 100%;
+    max-width: 792px;
 }
 
 a {
     color: #FFFFFF;
     font-family: "poppins", sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 4.5vw, 24px);
     text-decoration: none;
     background-color: #9747FF;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: 66px;
     display: block;
     text-align: center;
@@ -72,45 +83,8 @@ a:hover {
 
 section img {
     display: block;
-    width: 792px;
-    height: 442px;
+    width: 100%;
+    max-width: 792px;
+    height: auto;
     margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    header {
-        margin: 0;
-    }
-
-    header img {
-        margin: 65px 0 0 60px;
-    }
-
-    p {
-        width: 648px;
-    }
-}
-
-@media (max-width: 375px) {
-    header img {
-        margin: 32px 0 0 16px;
-    }
-    h1 {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 20px;
-        width: 340px;
-    }
-
-    a {
-        font-size: 20px;
-        width: 251px;
-    }
-
-    section img {
-        width: 340px;
-        height: 230px;
-    }
 }
